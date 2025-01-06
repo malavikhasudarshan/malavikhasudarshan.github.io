@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon - Case Study</title>
+    <!--=================================-->
+    <!--==== Google font ================-->
+    <!--=================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--=================================-->
+    <!--==== Main styles ================-->
+    <!--=================================-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--=================================-->
+    <!--==== Hero =======================-->
+    <!--=================================-->
+    <header class="pt-10 lg:pt-8">
+        <div class="container">
+            <nav class="flex justify-between font-medium">
+                <a class="hidden md:inline" href="index.html">About</a>
+                <a class="hidden md:inline" href="roles.html">Roles</a>
+                <a class="hidden md:inline" href="projects.html">Projects</a>
+                <a class="hidden md:inline" href="art.html">Art + Design</a> 
+                <!-- use an anchor tag to link to photography section and have contact info underneath -->
+                <a class="hidden md:inline" href="https://www.instagram.com/photosbymalavikha/">Photography</a>
+                <button id="mobile_menu_trigger" class="inline md:hidden"><svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="24" height="4" fill="#201F27"/>
+                    <rect x="12" y="10.5" width="12" height="4" fill="#201F27"/>
+                </svg></button>
+            </nav>
+        </div>
+    </header>
+    <!--=================================-->
+    <!--==== Title ======================-->
+    <!--=================================-->
+    <section class="pt-8 md:pt-28 pb-8 lg:pb-8">
+        <div class="container grid grid-cols-12 gap-8">
+            <div class="col-span-12 lg:col-span-8">
+                <h1 class="text-lg">Computer Vision, Interactive Art</h1>
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-medium">Pose-Driven Interactive Water Ripples</h2>
+            </div>
+        </div>
+    </section>
+    <!--=================================-->
+    <!--==== Cover Image ================-->
+    <!--=================================-->
+    <section class="h-64 lg:h-screen-90 w-full bg-no-repeat bg-center bg-cover" style="background-image: url(./assets/ripples1.png);"></section>
+    <!--=================================-->
+    <!--==== Content ====================-->
+    <!--=================================-->
+    <section class="mt-8 lg:mt-20 pb-16">
+        <div class="container grid grid-cols-12 gap-8">
+            <div class="col-span-full grid grid-cols-12 gap-8">
+                <div class="flex flex-col col-span-full md:col-span-6">
+                    <a class="text-sm mb-4">Live Demo</p>
+                    t-medium underline" href="https://malavikhasudarshan.github.io/ripples/">malavikhasudarshan.github.io/ripples/</a>
+                </div>
+                <div class="flex flex-col col-span-full md:col-span-6 lg:col-span-3">
+                    <p class="text-sm mb-4">Code</p>
+                    <a class="font-medium underline" href="https://github.com/malavikhasudarshan/ripples/">github.com/malavikhasudarshan/ripples</a>
+                </div>
+                <div class="col-span-12 lg:col-span-10 text-lg font-medium my-8">
+                    <p>
+                      A creative, interactive visual project using <strong>ML5.js</strong> and <strong>p5.js</strong> to simulate dynamic water ripples based on human motion detection. This program detects keypoints from a live camera feed, generates ripples where motion is detected, and overlays them on a flowing, water-like background with a pixelated, noise-driven effect.
+                    </p>
+                  
+                    <h2 class="mt-8">Features</h2>
+                      <li><strong>Real-Time Pose Detection</strong>: Utilises the <strong>ML5.js</strong> <code>bodyPose</code> model to track body keypoints with confidence thresholds.</li>
+                      <li><strong>Dynamic Ripple Effects</strong>: Ripples appear at detected keypoint positions and fade away after 10 seconds.</li>
+                      <li><strong>Flowing Water Background</strong>: A noise-driven animation mimics the appearance of flowing water.</li>
+                  
+                    <h2 class="mt-8">Technologies</h2>
+                      <li><strong>ML5.js</strong>: For real-time human pose detection using the <code>bodyPose</code> model.</li>
+                      <li><strong>p5.js</strong>: For interactive visuals, animation, and drawing the water ripples and background.</li>
+                      <li><strong>JavaScript</strong>: Core logic for handling pose detection, ripple timing, and dynamic rendering.</li>
+                  
+                    <h2 class="mt-8">How It Works</h2>
+                      <li><strong>Pose Detection</strong>: A live video feed is captured using <code>p5.Video</code>. The <code>bodyPose</code> model identifies keypoints of the body (e.g., eyes, hands, elbows, knees).</li>
+                      <li><strong>Ripple Generation</strong>: When keypoints exceed a confidence threshold, a ripple effect is generated at the corresponding location. Ripples grow and fade over time, disappearing after 10 seconds.</li>
+                      <li><strong>Water Background</strong>: A noise-based color grid creates a dynamic, flowing water effect as the backdrop.</li>
+            </div>
+            <img class="col-span-full mb-8" src="./images/case_study_2.png" alt="">
+            <img class="col-span-full md:col-span-6 mb-8" src="./images/case_study_3.png" alt="">
+            <img class="col-span-full md:col-span-6 mb-8" src="./images/case_study_4.png" alt="">
+            <img class="col-span-full mb-8" src="./images/case_study_1.png" alt="">
+        </div>
+    </section>
+    <!--=================================-->
+    <!--==== Footer =====================-->
+    <!--=================================-->
+    <footer class="pt-24 pb-8 bg-bg">
+        <div class="container relative grid grid-cols-12 gap-8">
+            <!-- <div class="col-start-1 lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col justify-center text-center mb-8 lg:mb-16 ">
+            <a href="./contact.html" class="bg-primary hover:bg-transparent px-16 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-2 self-center transition-colors duration-150">Let’s talk</a>
+            </div> -->
+            <div class="col-span-12 md:col-span-10 lg:col-span-8 col-start-1 md:col-start-2 lg:col-start-3 flex flex-col md:flex-row items-center justify-start md:justify-between space-y-4 md:space-y-0 text-lg font-medium mb-8">
+                <a href="https://github.com/malavikhasudarshan">Github</a>
+                <a href="https://scholar.google.com/citations?user=aVM9PUkAAAAJ&hl=en">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/malavikha-sudarshan/">LinkedIn</a>
+            </div>
+            <div class="col-span-12 flex flex-col md:flex-row items-center md:items-start justify-start md:justify-between space-y-4 md:space-y-0"  style="color: white;">
+                <p>© 2022 All rights reserved.</p>
+                <p>Forked from <a href="https://www.myoussouf.com/">MYoussouf</a></p>
+            </div>
+        </div>
+    </footer>
+    <!--=================================-->
+    <!--==== Mobile Menu ================-->
+    <!--=================================-->
+    <div id="mobile_menu" class="w-full bg-primary text-white flex flex-col justify-center text-2xl space-y-4 fixed right-0 translate-x-full top-0  bottom-0 z-50 pl-8 transition-transform duration-500">
+        <button id="mobile_menu_close" class="absolute top-10 right-4 flex items-center text-base">close <svg class="ml-4" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.12109" y="0.454041" width="24" height="3" transform="rotate(45 2.12109 0.454041)" fill="#fff"/><rect y="17.4246" width="24" height="3" transform="rotate(-45 0 17.4246)" fill="#fff"/></svg></button>
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!--=================================-->
+    <!--==== Main JS ====================-->
+    <!--=================================-->
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
